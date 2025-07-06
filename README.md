@@ -8,9 +8,12 @@
 
 ### Internal Project Dependencies
 
-### External Project Dependencies (pip install ***)
-1. Jupyter Notebook: Jupyter Notebooks are a powerful tool for creating and sharing computational documents that contain live code, equations, visualizations, and narrative text.
-2. Scikit-learn: a popular choice for machine learning tasks
+### External Project Dependencies (**pip install -r requirements.txt**)
+1. Jupyter Notebook: Jupyter Notebooks are essentially interactive computing environments that allow for code execution, visualization, and sharing of insights within a single document, making them ideal for data exploration, analysis, and prototyping. Their ease of use and ability to combine code, visualizations, and documentation make them a cornerstone tool for many data science workflows.   
+2. Scikit-learn (sklearn): This is a popular choice for machine learning tasks. Scikit-learn is an open source machine learning library that supports supervised and unsupervised learning. It also provides various tools for model fitting, data preprocessing, model selection and evaluation, and many other utilities.
+3. matplotlib: a graph plotting library
+4. numpy: for handling numeric data in python
+
 
 
 ## 🗃️ Topics
@@ -35,6 +38,15 @@ pip install -r requirements.txt
 python -m pip show scikit-learn  # show scikit-learn version and location
 python -m pip freeze             # show all installed packages in the environment
 python -c "import sklearn; sklearn.show_versions()"
+```
+
+### Start/Stop Jupyter Notebook
+```
+# Start
+jupyter notebook
+
+# Stop
+To stop the server, press Ctrl+C in the terminal and confirm with y when prompted.
 ```
 
 ## 🌟 Developer/Contributor
