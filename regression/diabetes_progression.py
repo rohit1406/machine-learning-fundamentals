@@ -10,7 +10,7 @@ X, y = datasets.load_diabetes(return_X_y=True)
 # Analyze and preprossing the data.
 print(X.shape)
 print(X[0])
-X = X[:, 2] # select 3rd column of the data matrix
+X = X[:, 3] # select 3rd column(BMI) of the data matrix (0-age, 2-bmi, 3-bp )
 X = X.reshape((-1, 1)) # reshape to a 2D array with one column
 print(X.shape)
 
@@ -29,7 +29,7 @@ print(y_pred[:5])
 # Plotting the results
 plt.scatter(X_test, y_test, color='black')
 plt.plot(X_test, y_pred, color='blue', linewidth=3)
-plt.xlabel('Scaled BMI')
+plt.xlabel('Scaled BP (Blood Pressure)')
 plt.ylabel('Disease Progression')
-plt.title('A Graph Plot Showing Diabetes Progression Against BMI')
+plt.title('A Graph Plot Showing Diabetes Progression Against BP')
 plt.show()

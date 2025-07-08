@@ -13,7 +13,7 @@
 2. Scikit-learn (sklearn): This is a popular choice for machine learning tasks. Scikit-learn is an open source machine learning library that supports supervised and unsupervised learning. It also provides various tools for model fitting, data preprocessing, model selection and evaluation, and many other utilities.
 3. matplotlib: a graph plotting library
 4. numpy: for handling numeric data in python
-
+5. pandas: data analysis and manipulation tool
 
 
 ## 🗃️ Topics
