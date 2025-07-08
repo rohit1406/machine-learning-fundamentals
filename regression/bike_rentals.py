@@ -35,7 +35,20 @@ def plot_hist_box_rentals():
     # Add title to the figure
     fig.suptitle('Rental Distribution')
 
+# Visual exploration of the numeric features
+# Plot a histogram for each numeric feature
+def plot_hist_numeric_features():
+    for col in numeric_features:
+        fig = plt.figure(figsize=(9, 6))
+        ax = fig.gca()
+        feature = bike_data[col]
+        feature.hist(bins=100, ax=ax)
+        ax.axvline(feature.mean(), color='magenta', linestyle='dashed', linewidth=2)
+        ax.axvline(feature.median(), color='cyan', linestyle='dashed', linewidth=2)
+        ax.set_title(col)
+
 plot_hist_box_rentals()
+plot_hist_numeric_features()
 
 # Show the figure
 plt.show()
